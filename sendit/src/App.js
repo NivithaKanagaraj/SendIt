@@ -16,7 +16,6 @@ const [{user}, dispatch] = useStateValue();
     
     <div className="App">
       
-      {/* <h1>Lets develop the slack........Come on the Prakash</h1> */}
     <Router>
       {!user ?(
         <Login />

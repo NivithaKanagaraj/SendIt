@@ -2,11 +2,10 @@ import React, { useState } from 'react'
 import "./ChatInput.css"
 import { useStateValue } from "./StateProvider"
 import db, {storage} from './firebase';
-import firebase from "firebase";
-import uuidv4 from 'uuid/v4'
-import mime from "mime-types";
+import firebase from 'firebase/compat/app';
+import { v4 as uuidv4 } from 'uuid';
 import PublishIcon from '@material-ui/icons/Publish';
-import ImageIcon from '@material-ui/icons/Image';
+
 
 function ChatInput({channelName, channelId}) {
 
